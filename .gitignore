@@ -1,0 +1,32 @@
+# Node modules and environment
+node_modules/
+.env
+
+# Logs
+logs/
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Build/output folders (optional)
+dist/
+build/
+
+# IDE and editor folders
+.vscode/
+.idea/
+
+# Optional: prevent uploads of compiled scripts
+*.zip
+*.bak
+*.tar.gz
+
+# Optional: Live Server / temp files
+*.tmp
+*.swp
+
+# Optional: if you use serve or live-server cache
+.serve/
+

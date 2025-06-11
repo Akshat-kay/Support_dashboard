@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body onload="initialize()">
+  <h1 id="dashboardTitle">Support Dashboard</h1>
+
+  <section>
+    <h2 id="add_case_title">Add Support Case</h2>
+    <input placeholder="Customer Name" id="customer" /><br/>
+    <input placeholder="Issue" id="issue" /><br/>
+    <input placeholder="Status" id="status" /><br/>
+    <button id="submit_btn" onclick="addCase()">Submit</button>
+  </section>
+
+  <section>
+    <h2>All Support Cases</h2>
+    <ul id="caseList"></ul>
+  </section>
+
+  <section>
+    <h2>Upload Log</h2>
+    <input type="file" id="logFile" />
+    <button onclick="uploadLog()">Upload Log</button>
+    <pre id="logContent"></pre>
+  </section>
+
+  <section>
+    <h2>Knowledge Base</h2>
+    <input placeholder="Search FAQs" onkeyup="searchFaqs(this.value)" />
+    <ul id="faqList"></ul>
+  </section>
+
+  <section>
+    <h2>Report</h2>
+    <canvas id="statusChart"></canvas>
+  </section>
+
+  <select onchange="loadLanguage(this.value)">
+    <option value="en">English</option>
+    <option value="es">Español</option>
+  </select>
+
+  <script src="main.js"></script>
+</body>
+</html>
