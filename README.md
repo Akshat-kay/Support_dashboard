@@ -1,6 +1,4 @@
-markdown
-Copy
-Edit
+```markdown
 # 🛠️ Support Dashboard for eCommerce App
 
 A full-stack support dashboard to manage customer support cases, view uploaded logs, browse FAQs, and generate support reports. Built with Node.js, Express, MySQL, and vanilla HTML/JS with Chart.js for visualizations.
@@ -9,16 +7,16 @@ A full-stack support dashboard to manage customer support cases, view uploaded l
 
 ## 📂 Project Structure
 
-support-dashboard/
-├── backend/ # Express API for logs, cases, faqs, reports
-├── frontend/ # Static frontend UI
-├── sql/ # SQL schema and seed data
-├── logs/ # Uploaded log files
-└── .gitignore # Files ignored by Git
+```
 
-yaml
-Copy
-Edit
+support-dashboard/
+├── backend/           # Express API for logs, cases, faqs, reports
+├── frontend/          # Static frontend UI
+├── sql/               # SQL schema and seed data
+├── logs/              # Uploaded log files
+└── .gitignore         # Files ignored by Git
+
+````
 
 ---
 
@@ -49,12 +47,11 @@ Edit
 ```bash
 git clone https://github.com/YOUR_USERNAME/support-dashboard.git
 cd support-dashboard
-2️⃣ Setup MySQL Database
-In MySQL CLI or a GUI (like Workbench):
+````
 
-sql
-Copy
-Edit
+### 2️⃣ Setup MySQL Database
+
+```sql
 CREATE DATABASE support_dashboard;
 USE support_dashboard;
 
@@ -71,69 +68,83 @@ CREATE TABLE faqs (
   question TEXT,
   answer TEXT
 );
-3️⃣ Backend Setup
-bash
-Copy
-Edit
+```
+
+---
+
+### 3️⃣ Backend Setup
+
+```bash
 cd backend
 npm install
-Create a .env file:
+```
 
-ini
-Copy
-Edit
+Create a `.env` file:
+
+```
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=support_dashboard
 PORT=3000
+```
+
 Start the backend:
 
-bash
-Copy
-Edit
+```bash
 node server.js
-4️⃣ Frontend Setup
-Open frontend/index.html in a browser directly
+```
+
+---
+
+### 4️⃣ Frontend Setup
+
+Open `frontend/index.html` in a browser directly
 or run a local server:
 
-bash
-Copy
-Edit
+```bash
 cd frontend
 npx serve .
-🌐 API Endpoints
-Method	Endpoint	Description
-GET	/cases	List all support cases
-POST	/cases	Add a new case
-POST	/logs/upload	Upload log file
-GET	/faqs	Get all FAQs
-GET	/faqs/search?q=term	Search FAQs
-GET	/reports/cases-by-status	Report summary
+```
 
-🌍 Language Support
-Available languages:
+---
 
-English (en)
+## 🌐 API Endpoints
 
+| Method | Endpoint                   | Description            |
+| ------ | -------------------------- | ---------------------- |
+| GET    | `/cases`                   | List all support cases |
+| POST   | `/cases`                   | Add a new case         |
+| POST   | `/logs/upload`             | Upload log file        |
+| GET    | `/faqs`                    | Get all FAQs           |
+| GET    | `/faqs/search?q=term`      | Search FAQs            |
+| GET    | `/reports/cases-by-status` | Report summary         |
 
+---
 
-Add more under frontend/i18n/ like fr.json, de.json, etc.
+---
 
-📦 Deployment Ideas
-Frontend → Vercel / Netlify / GitHub Pages
+## 📦 Deployment Ideas
 
-Backend → Render / Railway / Heroku
+* **Frontend** → Vercel / Netlify / GitHub Pages
+* **Backend** → Render / Railway / Heroku
+* **Database** → Planetscale / MySQL Docker / RDS
 
-Database → Planetscale / MySQL Docker / RDS
+---
 
-🙌 Contributing
+## 🙌 Contributing
+
 Pull requests welcome. Please follow clean code practices and test features before submitting.
 
-📄 License
-Licensed under the MIT License.
+---
 
-🔗 Contact
-Developer: Akshat Kashyap
-🌐 Portfolio: akshatkashyap.cloud
-💼 LinkedIn: linkedin.com/in/786akshatk
+---
+
+## 🔗 Contact
+
+**Developer:** Akshat Kashyap
+🌐 **Portfolio**: [akshatkashyap.cloud](http://akshatkashyap.cloud/)
+💼 **LinkedIn**: [linkedin.com/in/786akshatk](https://linkedin.com/in/786akshatk)
+
+```
+```
